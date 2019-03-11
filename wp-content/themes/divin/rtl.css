@@ -1,0 +1,401 @@
+/*
+Theme Name: Divin
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Normalize
+ * 2.0 - Typography
+ * 3.0 - Elements
+ * 4.0 - Forms
+ * 5.0 - Navigations
+ * 6.0 - Accessibility
+ * 7.0 - Widgets
+ * 8.0 - Content
+ *   8.1 - Header
+ *   8.2 - Posts and pages
+ *   8.3 - Comments
+ *   8.4 - Footer
+ * 9.0 - Multisites
+ * 10.0 - Media Queries
+ */
+
+
+/**
+ * 1.0 - Normalize
+ */
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	margin-right: auto;
+	margin-left: 0.4375em;
+}
+
+
+/**
+ * 2.0 - Typography
+ */
+
+body,
+button,
+button[disabled]:hover,
+button[disabled]:focus,
+input[type="button"],
+input[type="button"][disabled]:hover,
+input[type="button"][disabled]:focus,
+input[type="reset"],
+input[type="reset"][disabled]:hover,
+input[type="reset"][disabled]:focus,
+input[type="submit"],
+input[type="submit"][disabled]:hover,
+input[type="submit"][disabled]:focus,
+input,
+select,
+textarea,
+.post-password-form label,
+.main-navigation,
+.post-navigation,
+.post-navigation .post-title,
+.pagination,
+.image-navigation,
+.comment-navigation,
+.site .skip-link,
+.logged-in .site .skip-link,
+.widget .widget-title,
+.widget_recent_entries .post-date,
+.widget_rss .rss-date,
+.widget_rss cite,
+.tagcloud a,
+.site-title,
+.entry-title,
+.entry-footer,
+.sticky-post,
+.page-title,
+.page-links,
+.comments-title,
+.comment-reply-title,
+.comment-metadata,
+.pingback .edit-link,
+.comment-reply-link,
+.comment-form label,
+.no-comments,
+.required,
+.site-footer .site-title,
+.site-footer .site-title:after,
+.widecolumn label,
+.widecolumn .mu_register label {
+	font-family: Arial, Tahoma, sans-serif;
+}
+
+::-webkit-input-placeholder {
+	font-family: Arial, Tahoma, sans-serif;
+}
+
+:-moz-placeholder {
+	font-family: Arial, Tahoma, sans-serif;
+}
+
+::-moz-placeholder {
+	font-family: Arial, Tahoma, sans-serif;
+}
+
+:-ms-input-placeholder {
+	font-family: Arial, Tahoma, sans-serif;
+}
+
+blockquote {
+	border-right-width: 4px;
+	border-left-width: 0;
+	padding-right: 1.263157895em;
+	padding-left: 0;
+}
+
+
+/**
+ * 3.0 - Elements
+ */
+
+ul,
+ol {
+	margin: 0 1.25em 1.75em 0;
+}
+
+ol {
+	margin-right: 1.5em;
+	margin-left: 0;
+}
+
+caption,
+th,
+td {
+	text-align: right;
+}
+
+
+/**
+ * 4.0 - Forms
+ */
+
+input[type="search"].search-field {
+	border-radius: 0 2px 2px 0;
+}
+
+.search-submit:before {
+	left: 1px;
+}
+
+.search-submit {
+	border-radius: 2px 0 0 2px;
+	left: 0;
+	right: auto;
+}
+
+
+/**
+ * 5.0 - Navigation
+ */
+
+
+
+/**
+ * 6.0 - Accessibility
+ */
+
+.site .skip-link {
+	left: auto;
+	right: -9999em;
+}
+
+.site .skip-link:focus {
+	left: auto;
+	right: 6px;
+}
+
+
+/**
+ * 7.0 - Widgets
+ */
+
+.tagcloud a {
+	margin-right: 0;
+	margin-left: 0.1875em;
+}
+
+
+/**
+ * 8.0 - Content
+ */
+
+
+/**
+ * 8.1 - Header
+ */
+
+#page {
+	overflow-y: hidden;
+}
+
+.site-branding {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+
+/**
+ * 8.2 - Posts and pages
+ */
+
+.author-avatar .avatar {
+	float: right;
+	margin-right: 0;
+	margin-left: 1.75em;
+}
+
+.entry-footer .avatar {
+	margin-right: 0;
+	margin-left: 0.5384615385em;
+}
+
+.page-links a,
+.page-links > span {
+	margin-right: auto;
+	margin-left: 0.3076923077em;
+}
+
+.page-links > .page-links-title {
+	padding-right: 0;
+	padding-left: 0.6153846154em;
+}
+
+body:not(.search-results) .entry-summary .alignright {
+	margin: 0.2631578947em 0 1.4736842105em 1.4736842105em;
+}
+
+body:not(.search-results) .entry-summary .alignleft {
+	margin: 0.2631578947em 1.4736842105em 1.4736842105em 0;
+}
+
+.sidebar,
+.widget .entry-meta,
+.featured-content-wrapper .entry-meta {
+	text-align: right;
+}
+
+.nav-next a:after {
+     padding-right: 5px;
+     padding-left: 0;
+}
+
+.nav-previous a:before {
+	padding-right: 0;
+     padding-left: 5px;
+}
+
+.nav-previous {
+	float: right;
+	padding: 0 0 35px 20px;
+}
+
+.nav-next {
+	float: left;
+	padding: 0 20px 35px 0;
+}
+
+.title {
+	float: right;
+	text-align: right;
+}
+
+.description {
+	float: left;
+	text-align: left;
+}
+
+#scrollup {
+	right: auto;
+	left: 20px;
+}
+
+.widget_categories ul, 
+.widget_archive ul {
+	text-align: left;
+}
+
+.widget_categories ul a, 
+.widget_archive ul a {
+	float: right;
+}
+
+/**
+ * 8.3 - Comments
+ */
+
+.comment-list .children > li {
+	padding-right: 0.875em;
+	padding-left: 0;
+}
+
+.comment-author .avatar {
+	float: right;
+	margin-right: auto;
+	margin-left: 0.875em;
+}
+
+.bypostauthor > article .fn:after {
+	left: auto;
+	right: 3px;
+}
+
+.comment-content ul,
+.comment-content ol {
+	margin: 0 1.25em 1.5em 0;
+}
+
+.comment-reply-title small a {
+	float: left;
+}
+
+
+/**
+ * 8.4 - Footer
+ */
+
+.site-footer .site-title:after {
+	padding-right: 0.538461538em;
+	padding-left: 0.307692308em;
+}
+
+
+/**
+ * 9.0 - Multisites
+ */
+
+.widecolumn .mu_register label {
+	margin-right: 0;
+	margin-left: 0.7692307692em;
+}
+
+
+/**
+ * 10.0 - Media Queries
+ */
+
+@media screen and (min-width: 56.625em) {
+	 .site-navigation ul ul:before {
+	 	right: auto;
+        left: 7px;
+    }
+
+	.site-navigation ul ul:after {
+	 	right: auto;
+        left: 10px;
+    }
+
+	.site-navigation li:hover > ul,
+    .site-navigation li.focus > ul {
+    	right: auto;
+        left: 0;
+    }
+
+    .site-navigation ul ul li:hover > ul,
+    .site-navigation ul ul li.focus > ul {
+    	right: auto;
+        left: 100%;
+    }
+
+    .site-navigation .menu-item-has-children > a > .icon,
+    .site-navigation .page_item_has_children > a > .icon {
+        right: 5px;
+        left: auto;
+    }
+
+    .site-navigation ul ul .menu-item-has-children > a > .icon,
+    .site-navigation ul ul .page_item_has_children > a > .icon {
+    	right: auto;
+    	left: 9px;
+        -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+        -ms-transform: rotate(270deg); /* IE 9 */
+        transform: rotate(270deg);
+    }
+
+    .full-width-layout .archive-post-wrapper .entry-meta {
+    	float: left;
+    }
+
+    .full-width-layout .archive-post-wrapper .entry-summary {
+        float: right;
+    }   
+}

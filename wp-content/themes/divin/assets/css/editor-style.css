@@ -1,0 +1,601 @@
+/*
+    Theme Name: Divin
+    Description: Used to style the TinyMCE editor.
+*/
+
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Body
+ * 2.0 - Typography
+ * 3.0 - Elements
+ * 4.0 - Alignment
+ * 5.0 - Caption
+ * 6.0 - Galleries
+ * 7.0 - Audio / Video
+ * 8.0 - RTL
+ */
+
+
+/**
+ * 1.0 - Body
+ */
+
+body {
+    color: #5e5e5e;
+    font-family: 'Cousine', monospace;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 20px 40px;
+    max-width: 664px;
+    vertical-align: baseline;
+}
+
+
+/**
+ * 2.0 - Typography
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    clear: both;
+    font-weight: 700;
+    line-height: 1.3125;
+    word-wrap: break-word;
+    text-rendering: optimizeLegibility;    
+}
+
+h1 {
+    font-size: 33px;
+    line-height: 1.2727272727;
+    margin-top: 1.696969697em;
+    margin-bottom: 0.8484848485em;
+}
+
+h2 {
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 1.25;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 23px;
+    font-size: 1.4375rem;
+    line-height: 1.2173913043;
+    margin-top: 2.4347826087em;
+    margin-bottom: 1.2173913043em;
+}
+
+h4 {
+    letter-spacing: 0.131578947em;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 19px;
+    line-height: 1.1052631579;
+    margin-top: 2.9473684211em;
+    margin-bottom: 1.473684211em;
+}
+
+h4 {
+    letter-spacing: 0.140625em;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-style: italic;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+    margin-top: 0;
+}
+
+p {
+    margin: 0 0 28px;
+    padding: 0;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+dfn,
+cite,
+em,
+i {
+    font-style: italic;
+}
+
+blockquote {
+    border: 0 solid #ffeb3b;
+    border-left-width: 4px;
+    font-size: 19px;
+    font-size: 1.1875rem;
+    font-style: italic;
+    line-height: 1.4736842105;
+    margin: 0 0 1.4736842105em;
+    overflow: hidden;
+    padding: 0 0 0 1.263157895em;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote p {
+    margin-bottom: 1.4736842105em;
+}
+
+blockquote cite,
+blockquote small {
+    display: block;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+blockquote cite:before,
+blockquote small:before {
+    content: "\2014\00a0";
+}
+
+blockquote em,
+blockquote i,
+blockquote cite {
+    font-style: normal;
+}
+
+blockquote strong,
+blockquote b {
+    font-weight: 400;
+}
+
+blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+address {
+    font-style: italic;
+    margin: 0 0 28px;
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+    font-family: Inconsolata, monospace;
+}
+
+pre {
+    background-color: #f8f8f8;
+    border: 1px solid #e8e6e6;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.3125;
+    margin: 0 0 1.75em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1.75em;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+code,
+.mce-content-body code {
+    background-color: #ffeb3b;
+    color: #5e5e5e;
+    padding: 2px 4px;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted #e8e6e6;
+    cursor: help;
+}
+
+mark,
+ins {
+    background: #ffeb3b;
+    color: #5e5e5e;
+    padding: 2px 4px;
+    text-decoration: none;
+}
+
+sup,
+sub {
+    font-size: 75%;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    top: -6px;
+}
+
+sup {
+    bottom: -3px;
+}
+
+small {
+    font-size: 80%;
+}
+
+big {
+    font-size: 125%;
+}
+
+
+/**
+ * 3.0 - Elements
+ */
+
+hr {
+    background-color: #e8e6e6;
+    border: none;
+    height: 1px;
+    margin: 0 0 28px;
+}
+
+ul,
+ol {
+    margin: 0 0 28px 20px;
+    padding: 0;
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: decimal;
+    margin-left: 24px;
+}
+
+li > ul,
+li > ol {
+    margin-bottom: 0;
+}
+
+li > ul,
+blockquote > ul {
+    margin-left: 20px;
+}
+
+li > ol,
+blockquote > ol {
+    margin-left: 24px;
+}
+
+dl {
+    margin: 0 0 28px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin: 0 0 28px;
+}
+
+table,
+caption,
+th,
+td,
+.mce-item-table,
+.mce-item-table caption,
+.mce-item-table th,
+.mce-item-table td {
+    border: 1px solid #5e5e5e;
+}
+
+table,
+.mce-item-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-width: 1px 0 0 1px;
+    margin: 0 0 28px;
+    width: 100%;
+}
+
+table th,
+.mce-item-table th,
+table caption,
+.mce-item-table caption {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 7px;
+    text-align: left;
+    vertical-align: baseline;
+}
+
+table th,
+.mce-item-table th {
+    border-width: 0 1px 1px 0;
+}
+
+caption,
+.mce-item-table caption {
+    border-width: 1px 1px 0 1px;
+    font-weight: 700;
+    text-align: center;
+}
+
+table td,
+.mce-item-table td {
+    border-width: 0 1px 1px 0;
+    font-size: 16px;
+    padding: 7px;
+    vertical-align: baseline;
+}
+
+img {
+    border: none;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+a img {
+    display: block;
+}
+
+figure {
+    margin: 0;
+}
+
+del {
+    opacity: 0.8;
+}
+
+a {
+    color: #5e5e5e;
+    border-bottom: 4px solid #ffeb3b;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;    
+}
+
+a:hover,
+a:focus,
+a:active {
+    border-bottom: 4px solid #0fc;
+}
+
+a.post-thumbnail,
+.post-thumbnail a {
+    border: none;
+}
+
+fieldset {
+    border: 1px solid #d1d1d1;
+    margin: 0 0 28px;
+    min-width: inherit;
+    padding: 14px;
+}
+
+fieldset > :last-child {
+    margin-bottom: 0;
+}
+
+
+/**
+ * 4.0 - Alignment
+ */
+
+.alignleft {
+    float: left;
+    margin: 6px 28px 28px 0;
+}
+
+.alignright {
+    float: right;
+    margin: 6px 0 28px 28px;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin: 0 auto 28px;
+}
+
+blockquote.alignleft {
+    margin: 5px 24px 24px 0;
+    width: 50%;
+}
+
+blockquote.alignright {
+    margin: 5px 0 24px 24px;
+    width: 50%;
+}
+
+blockquote.aligncenter {
+    margin-bottom: 24px;
+}
+
+
+/**
+ * 5.0 - Caption
+ */
+
+.wp-caption {
+    background: transparent;
+    border: none;
+    margin-bottom: 28px;
+    max-width: 100%;
+    padding: 0;
+    text-align: inherit;
+}
+
+.wp-caption-text,
+.wp-caption-dd {
+    color: #686868;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 1.6153846154;
+    padding-top: 7px;
+}
+
+
+/**
+ * 6.0 - Galleries
+ */
+
+.mce-content-body .wpview-wrap {
+    margin-bottom: 28px;
+}
+
+.gallery {
+    margin: 0 -1.1666667%;
+    padding: 0;
+}
+
+.gallery .gallery-item {
+    display: inline-block;
+    max-width: 33.33%;
+    padding: 0 1.1400652% 2.2801304%;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+}
+
+.gallery-columns-1 .gallery-item {
+    max-width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+    max-width: 50%;
+}
+
+.gallery-columns-4 .gallery-item {
+    max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+    max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+    max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+    max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+    max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+    max-width: 11.11%;
+}
+
+.gallery .gallery-caption {
+    font-size: 13px;
+    margin: 0;
+}
+
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+    display: none;
+}
+
+
+/**
+ * 7.0 - Audio / Video
+ */
+
+.wp-audio-shortcode a,
+.wp-playlist a {
+    box-shadow: none;
+}
+
+.mce-content-body .wp-audio-playlist {
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.mce-content-body .wp-playlist-tracks {
+    margin-top: 0;
+}
+
+.mce-content-body  .wp-playlist-item {
+    padding: 10px 0;
+}
+
+.mce-content-body .wp-playlist-item-length {
+    top: 10px;
+}
+
+
+/**
+ * 8.0 - RTL
+ */
+
+.rtl blockquote {
+    border: 0 solid #ffeb3b;
+    border-right-width: 4px;
+}
+
+.rtl blockquote.alignleft,
+.rtl blockquote.alignright {
+    border: 0 solid #ffeb3b;
+    border-top-width: 4px;
+}
+
+.rtl blockquote:not(.alignleft):not(.alignright) {
+    margin-right: -28px;
+    padding: 0 24px 0 0;
+}
+
+.rtl blockquote blockquote:not(.alignleft):not(.alignright) {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.rtl li > ul,
+.rtl blockquote > ul {
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+.rtl li > ol,
+.rtl blockquote > ol {
+    margin-right: 24px;
+    margin-left: auto;
+}
+
+.rtl table th,
+.rtl .mce-item-table th,
+.rtl table caption {
+    text-align: right;
+}
